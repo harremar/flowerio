@@ -1,0 +1,311 @@
+// FOOTER STYLING
+footer {
+  max-width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  // TOP OF THE FOTTER CONTAINING SOCIALS, CS, AND LOCATION
+  .white-bar {
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    // LOCATION
+    .findstore-holder {
+      width: 400px;
+      height: 30px;
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .findstore {
+        width: 150px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .locationicon {
+          width: 16px;
+          height: 16px;
+          background-image: url(../images/iconmonstr-location-1.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .locationicon:hover {
+          cursor: pointer;
+        }
+        h1 {
+          margin-top: 15px;
+          height: 16px;
+          font-size: 14px;
+          font-family: candara;
+          float: right;
+        }
+        h1:hover {
+          cursor: pointer;
+        }
+      }
+      // CS
+      .customerSupport {
+        margin-top: 15px;
+        max-width: 800px;
+        height: 30px;
+        h1 {
+          font-size: 12px;
+          font-family: candara;
+        }
+      }
+      .customerSupport:hover {
+        cursor: pointer;
+      }
+    }
+    // SOCIALS
+    .social-holder {
+      width: 250px;
+      height: 50px;
+      padding-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h1 {
+        font-size: 14px;
+        margin-top: 10px;
+        font-family: candara;
+      }
+      .twitter {
+        width: 19px;
+        height: 19px;
+        background-image: url(../images/iconmonstr-twitter-1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .twitter:hover {
+        cursor: pointer;
+      }
+      .instagram {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/iconmonstr-instagram-11.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .instagram:hover {
+        cursor: pointer;
+      }
+      .facebook {
+        width: 19px;
+        height: 19px;
+        background-image: url(../images/iconmonstr-facebook-6.svg);
+        background-position: 3px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .facebook:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  // MAIN FOOTER
+  .footer-content {
+    max-width: 100%;
+    min-height: 340px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    // SELCTION OF FOOTER
+    .footer-column {
+      max-width: 292px;
+      min-height: 200px;
+      .title {
+        width: 100%;
+        color: black;
+        h1 {
+          font-size: 24px;
+          font-family: candara;
+        }
+        h2 {
+          font-size: 18px;
+          font-family: candaraBold;
+        }
+      }
+      // LINKS
+      .column-links {
+        width: 100%;
+        min-height: 30px;
+        p {
+          min-width: 50px;
+          text-decoration: none;
+          font-size: 14px;
+          font-family: candara;
+          margin-bottom: 20px;
+          transition: 0.2s;
+        }
+        p:hover {
+          cursor: pointer;
+          color: $site-purple;
+        }
+      }
+    }
+  }
+  // BOTTON OF FOOTER -- CREATOR
+  .bottom-bar {
+    width: 100%;
+    height: 55px;
+    margin: 0 auto;
+    border-top: #ccc solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 130px;
+    .copywright {
+      color: #aaa;
+      font-size: 14px;
+      font-family: candaraItalic;
+    }
+    .privacy-links {
+      color: #aaa;
+      font-size: 14px;
+      font-family: candaraItalic;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      p {
+        color: #aaa;
+        padding: 10px;
+        height: 25px;
+      }
+      p:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  footer {
+    // SECTIONS STACK ONTOP OF EACHOTHER
+    .white-bar {
+      height: 193px;
+      flex-direction: column;
+      .findstore-holder {
+        flex-direction: column;
+        height: 140px;
+        width: 100%;
+        // BOTTOM SHADOW
+        .findstore {
+          height: 120px;
+          width: 100%;
+          margin-bottom: 0;
+          margin-left: -16px;
+          justify-content: center;
+          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+          .locationicon {
+            margin: 10px;
+            margin-left: 20px;
+            width: 25px;
+            height: 25px;
+          }
+          h1 {
+            font-size: 16px;
+            display: none;
+          }
+        }
+        // BOTTOM SHADOW
+        .customerSupport {
+          height: 120px;
+          width: 100%;
+          text-align: center;
+          margin-top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+          h1 {
+            width: 150px;
+            font-size: 16px;
+            font-family: candara;
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      }
+      .social-holder {
+        margin-left: 20px;
+        h1 {
+          display: none;
+        }
+      }
+    }
+    // MAIN FOOTER STACKS ON TOP OF EACH OTHER
+    .footer-content {
+      flex-direction: column;
+      .footer-column {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 200px;
+        .column-links {
+          p {
+            width: 100%;
+            margin: 25px auto;
+          }
+        }
+      }
+    }
+    // FLEX COLUMN -- STACK
+    .bottom-bar {
+      height: 200px;
+      flex-direction: column;
+      .copywright {
+        width: 300px;
+        padding: 10px;
+        font-family: candara;
+        text-align: center;
+      }
+      .privacy-links {
+        flex-direction: column;
+        min-width: 300px;
+        padding: 10px;
+        height: 120px;
+        p {
+          margin: 10px;
+          padding: 0;
+          height: auto;
+          font-family: candara;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    .white-bar {
+      height: 193px;
+      flex-direction: column;
+      .findstore-holder {
+        flex-direction: column;
+        height: 140px;
+        max-width: 400px;
+        .findstore {
+          height: 120px;
+          max-width: 300px;
+          margin-bottom: 0;
+          margin-left: -16px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

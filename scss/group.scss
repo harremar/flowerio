@@ -1,0 +1,70 @@
+// JOINING GROP STYLING
+// YELLOW SUNFLOWER BACKGROUND IMAGE
+.group {
+  width: 100%;
+  height: 260px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15)),
+    url(../images/sunflowerselection.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .group-holder {
+    max-width: 700px;
+    height: 140px;
+    margin: 0 auto;
+    // TEXT
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-family: candaraBold;
+    }
+    // SIGNUP BUTTON
+    .groupbtn {
+      background-color: $site-yellow;
+      width: 170px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
+
+      h3 {
+        font-size: 24px;
+        font-family: candaraBoldItalic;
+        color: white;
+        margin-top: 12px;
+      }
+    }
+    .groupbtn:hover {
+      background-color: $site-darkyellow;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .group {
+    .group-holder {
+      width: 240px;
+      height: 164px;
+      text-align: center;
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .groupbtn {
+        width: 150px;
+        height: 40px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// MORE EVENTS STYLING
+.moreEvents {
+  width: 100%;
+  min-height: 300px;
+  background-color: $site-lightyellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+
+  // TYPE OF EVENT
+  .eventType {
+    max-width: 300px;
+    min-height: 165px;
+    margin: 20px;
+    // TITLE
+    h1 {
+      font-size: 20px;
+      font-family: candaraBold;
+      text-align: center;
+    }
+    // INFO
+    p {
+      font-size: 18px;
+      font-family: candara;
+      text-align: center;
+    }
+    // EVENT TYPE BUTTON
+    .eventTypebtn {
+      width: 140px;
+      height: 40px;
+      background-color: $site-yellow;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
+      h3 {
+        font-size: 20px;
+        font-family: candaraBoldItalic;
+        color: white;
+        margin-top: 13px;
+      }
+    }
+    .eventTypebtn:hover {
+      background-color: $site-darkyellow;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  // EVENTS STACK ONTOP OF EACH OTHER
+  .moreEvents {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 440px) {
+  .moreEvents {
+    min-height: 518px;
+    .eventType {
+      min-height: 120px;
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .eventTypebtn {
+        width: 120px;
+        height: 30px;
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

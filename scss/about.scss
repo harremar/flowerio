@@ -1,0 +1,157 @@
+// ABOUT HOLDER STYLE
+.about {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  // HOLDS PARAGRAPH AND BUTTON
+  .aboutcontent {
+    width: 50%;
+    padding: 65px 20px;
+    padding-left: 50px;
+    h1 {
+      font-size: 52px;
+      font-family: candara;
+    }
+    p {
+      font-size: 20px;
+      font-family: candara;
+      max-width: 520px;
+    }
+    // ABOUT BUTTON
+    .aboutbtn {
+      margin-top: 20px;
+      width: 150px;
+      height: 40px;
+      background-color: $site-purple;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      transition: 0.3s;
+      box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
+      h4 {
+        font-size: 20px;
+        font-family: candaraBoldItalic;
+        color: white;
+        padding-top: 12px;
+      }
+    }
+    .aboutbtn:hover {
+      background-color: $site-darkpurple;
+      cursor: pointer;
+    }
+  }
+  // HOLDS THE ABOUT IMAGE
+  .aboutimageholder {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .aboutimage {
+      width: 350px;
+      height: 350px;
+      border-radius: 100%;
+      background-image: url(../images/aboutpicture.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    .aboutcontent {
+      padding-top: 100px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .aboutimageholder {
+      .aboutimage {
+        width: 320px;
+        height: 320px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  // ABOUT CONTENT AND IMAGE BECOME COLUMNS OR STACK ON TOP OF EACH OTHER
+  .about {
+    margin-top: 40px;
+    flex-direction: column;
+    display: flex;
+    .aboutcontent {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      min-height: 260px;
+
+      h1 {
+        font-size: 36px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      p {
+        font-size: 12px;
+        text-align: center;
+        margin: 20px auto;
+      }
+      .aboutbtn {
+        margin: 0 auto;
+      }
+    }
+    .aboutimageholder {
+      width: 100%;
+      max-height: 300px;
+      .aboutimage {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 440px) {
+  .about {
+    flex-direction: column;
+    display: flex;
+    .aboutcontent {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      min-height: 260px;
+
+      h1 {
+        font-size: 36px;
+        text-align: left;
+      }
+      p {
+        font-size: 12px;
+        text-align: left;
+      }
+      .aboutbtn {
+        margin: 0;
+      }
+    }
+    .aboutimageholder {
+      width: 100%;
+      max-height: 300px;
+
+      .aboutimage {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}

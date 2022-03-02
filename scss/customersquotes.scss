@@ -1,0 +1,48 @@
+// CUSTOMERS QUOTE STYLING
+.cquotes {
+  background-color: $site-lightyellow;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  // QUOTE HOLDER
+  .quoteholder {
+    max-width: 275px;
+    min-height: 100px;
+    justify-content: center;
+    // QUOTE
+    p {
+      font-size: 18px;
+      font-family: candaraItalic;
+      text-align: center;
+    }
+    // PERSON
+    h2 {
+      font-size: 20px;
+      font-family: candaraBold;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  // QUOTES STACK ONTOP OF EACH OTHER
+  .cquotes {
+    display: flex;
+    flex-direction: column;
+    height: 386px;
+  }
+}
+
+@media (max-width: 440px) {
+  .cquotes {
+    p {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+}

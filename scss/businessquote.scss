@@ -1,0 +1,39 @@
+// BQUOTE SECTION STYLING
+.bquote {
+  width: 100%;
+  min-height: 250px;
+  background-color: $site-yellow;
+  padding: 60px 30px;
+
+  // QUOTE
+  h3 {
+    font-family: candara;
+    font-size: 20px;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  // WHO SAID IT
+  h1 {
+    padding-top: 20px;
+    font-family: candaraBoldItalic;
+    font-size: 36px;
+    color: white;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .bquote {
+    min-height: 167px;
+    h3 {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+}

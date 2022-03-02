@@ -1,0 +1,173 @@
+// CONTACT SECTION STYLING
+#contact {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  // COMPANY INFO
+  .contactInfo {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 2px solid rgb(170, 170, 170, 0.2);
+
+    .contactInfoHolder {
+      width: 350px;
+      height: 390px;
+      // SECTION FOR INFO- ADDRESS, EMAIL, NUMBER
+      .littleInfo {
+        width: 350px;
+        min-height: 90px;
+        margin-bottom: 50px;
+
+        // TITLE
+        h1 {
+          font-size: 36px;
+          font-family: candaraBold;
+        }
+        // INFO
+        p {
+          font-size: 20px;
+          font-family: candara;
+          margin-bottom: 5px;
+          color: #aaa;
+        }
+      }
+    }
+  }
+  // MESSAGE FORM
+  .contactForm {
+    width: 50%;
+    height: 700px;
+    // TITLE
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 52px;
+      font-family: candara;
+    }
+    .form {
+      max-width: 425px;
+      height: 440px;
+      margin: 40px auto;
+      padding: 10px;
+      // SUBJECT LINE
+      h2 {
+        font-size: 20px;
+        font-family: candara;
+        margin-bottom: 5px;
+        // YELLOW STAR
+        span {
+          color: $site-yellow;
+          font-family: candara;
+        }
+      }
+      // USERS INPUT BOXES
+      input {
+        border: none;
+        border-bottom: 2px solid #aaa;
+        width: 100%;
+        height: 38px;
+        margin-bottom: 30px;
+        outline: none;
+      }
+      input:active {
+        border: none;
+      }
+      // SUBMIT BUTTON
+      .submitbtn {
+        background-color: $site-purple;
+        width: 120px;
+        height: 40px;
+        margin: 0 auto;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
+
+        h2 {
+          color: white;
+          font-size: 20px;
+          font-family: candaraBoldItalic;
+          margin-top: 5px;
+        }
+      }
+      .submitbtn:hover {
+        transition: 0.3s;
+        background-color: $site-darkpurple;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #contact {
+    // DIVS STACK ONTOP OF EACH OTHER
+    flex-direction: column;
+    .contactInfo {
+      border-right: none;
+      width: 100%;
+      height: 500px;
+      .contactInfoHolder {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .contactForm {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #contact {
+    .contactInfo {
+      height: 400px;
+      .contactInfoHolder {
+        height: 280px;
+        .littleInfo {
+          min-height: 60px;
+          margin-bottom: 35px;
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .contactForm {
+      max-width: 300px;
+      height: 500px;
+      h1 {
+        font-size: 36px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .form {
+        margin-top: 10px;
+        h2 {
+          font-size: 14px;
+        }
+        input {
+        }
+        .submitbtn {
+          width: 100px;
+          height: 30px;
+          h2 {
+            margin-top: 7px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
