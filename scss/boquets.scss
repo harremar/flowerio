@@ -22,11 +22,41 @@
     // AN ITEM HOLDS IMAGE AND INFO ABOUT PRODUCT
     .item {
       width: 280px;
-      height: 285px;
+      height: 350px;
       margin: 7px;
       justify-content: center;
       align-items: center;
       transition: all 0.2s ease-in-out;
+      position: relative;
+      // background-color: red;
+      margin-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 10px;
+      .additembtn {
+        width: 140px;
+        height: 40px;
+        background-color: $site-yellow;
+        position: absolute;
+        bottom: 15px;
+        left: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        display: none;
+
+        h2 {
+          padding-top: 15px;
+          font-family: candara;
+          font-size: 16px;
+        }
+      }
+      .additembtn:hover {
+        display: block;
+        transition: 0.3s;
+        background-color: $site-darkyellow;
+        cursor: pointer;
+      }
 
       // IMAGE
       img {
@@ -63,7 +93,13 @@
     .item:hover {
       transform: scale(1.1);
       transition: 0.5s;
-      cursor: pointer;
+
+      .additembtn {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
     }
   }
 }
@@ -88,7 +124,7 @@
       justify-content: center;
       .item {
         margin: 10px 20px;
-        height: 250px;
+        height: 310px;
         img {
           width: 170px;
           height: 170px;

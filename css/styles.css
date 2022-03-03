@@ -122,11 +122,6 @@ header .primary-nav a .logo h1 {
   font-family: candaraBold;
   color: black;
 }
-header .primary-nav a .logo h1 span {
-  font-family: candara;
-  font-size: 24px;
-  margin-left: -5px;
-}
 header .primary-nav a .logo:hover {
   cursor: pointer;
 }
@@ -183,6 +178,23 @@ header .primary-nav .nav-tabs .cart {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+header .primary-nav .nav-tabs .cart .circleCount {
+  width: 18px;
+  height: 18px;
+  background-color: #6c48b2;
+  border-radius: 20px;
+  position: absolute;
+  right: -5px;
+  top: -2px;
+  display: none;
+  color: white;
+  font-family: candara;
+  text-align: center;
+  padding-left: 6px;
+  padding-bottom: 20px;
+  font-size: 14px;
 }
 header .primary-nav .nav-tabs .cart:hover {
   cursor: pointer;
@@ -857,7 +869,7 @@ header .secondary-nav .nav-menu ul li a:hover {
 }
 #boquets .boquetsholder .item {
   width: 280px;
-  height: 285px;
+  height: 350px;
   margin: 7px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -867,6 +879,41 @@ header .secondary-nav .nav-menu ul li a:hover {
           align-items: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+#boquets .boquetsholder .item .additembtn {
+  width: 140px;
+  height: 40px;
+  background-color: #e1b520;
+  position: absolute;
+  bottom: 15px;
+  left: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: none;
+}
+#boquets .boquetsholder .item .additembtn h2 {
+  padding-top: 15px;
+  font-family: candara;
+  font-size: 16px;
+}
+#boquets .boquetsholder .item .additembtn:hover {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #cfa61d;
+  cursor: pointer;
 }
 #boquets .boquetsholder .item img {
   width: 200px;
@@ -901,7 +948,18 @@ header .secondary-nav .nav-menu ul li a:hover {
           transform: scale(1.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
+}
+#boquets .boquetsholder .item:hover .additembtn {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (max-width: 1000px) {
@@ -926,7 +984,7 @@ header .secondary-nav .nav-menu ul li a:hover {
   }
   #boquets .boquetsholder .item {
     margin: 10px 20px;
-    height: 250px;
+    height: 310px;
   }
   #boquets .boquetsholder .item img {
     width: 170px;
